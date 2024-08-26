@@ -1,13 +1,9 @@
 import Image from "next/image";
 import logoWeb from './../../../../public/logo/logo-one.jpg'
-
-import { object, string } from "yup";
-
-import RegisterForm from "@/app/auth/registerForm";
+import LoginForm from "@/app/auth/loginForm";
 
 
-
-const Register = () => {
+const Login = () => {
 
     return (
         <>
@@ -24,11 +20,11 @@ const Register = () => {
                             placeholder="blur"
                         />
 
-                        <h2 className="text-xl text-white font-bold">Register in to your account</h2>
+                        <h2 className="text-xl text-white font-bold">Sign in to your account</h2>
                     </header>
 
                     <div className="flex w-full">
-                        <RegisterForm />
+                       <LoginForm />
                     </div>
 
                 </div>
@@ -37,4 +33,4 @@ const Register = () => {
     )
 }
 
-export default Register;
+export default Login;

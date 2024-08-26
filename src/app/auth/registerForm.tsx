@@ -25,8 +25,7 @@ const InnerRegisterForm = (props : FormikProps<RegisterFormValues>) => {
             </div>
 
             <div className="flex justify-between items-center py-3">
-                <button type="submit" className="text-lg font-semibold text-white bg-blue-600 rounded py-2 px-4 hover:bg-blue-700 transition-all">Login User</button>
-                <a href="#" className="text-red-700">forget Password</a>
+                <button type="submit" className="text-lg font-semibold text-white bg-blue-600 rounded py-2 px-4 hover:bg-blue-700 transition-all">Register User</button>
             </div>
         </Form>
     )
