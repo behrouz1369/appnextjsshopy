@@ -1,10 +1,11 @@
 import Image from "next/image";
 import logoWeb from './../../../../public/logo/logo-one.jpg'
 import LoginForm from "@/app/auth/loginForm";
+import { useCookies } from "react-cookie";
 
 
 const Login = () => {
-
+    const [cookies, setCookie, removeCookie] = useCookies(['cookie-shopy']);
     return (
         <>
             {/* Login Page */}
@@ -24,7 +25,7 @@ const Login = () => {
                     </header>
 
                     <div className="flex w-full">
-                       <LoginForm />
+                       <LoginForm setCookie={setCookie} />
                     </div>
 
                 </div>
